@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'comments/style_.css' %}">
+
+<form action="{% url 'comments:add'%}" method="post">
+	{% csrf_token %}
+	<label for="comment"><h7>leave your comment here:</h7></label><br>
+	<textarea name="comment" value="0" id="comment"></textarea><br>
+	<input type="submit" value="send" />
+	{% for instance in comments %}
+		<br><h7>{{ instance.time }}:    {{ instance.comment }}</h7>
+	{% endfor %}
+</form>

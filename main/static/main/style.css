@@ -1,0 +1,39 @@
+{% load staticfiles %}
+@font-face 
+{
+	font-family: "staubach";
+	src: url("../fonts/staubach.ttf");
+}
+@font-face 
+{
+	font-family: "linux libertine";
+	src: url("../fonts/libertine.ttf");
+}
+@font-face 
+{
+	font-family: "roboto";
+	src: url("../fonts/roboto.ttf");
+}
+p.customfont{font-family: "staubach", "linux libertine", "roboto";}
+h1{font-family: 'staubach'; font-size: 400%; color: #000;margin-bottom: 0%; margin-top: 0%;}
+h7{font-family: 'roboto'; color: #F34520;}
+body
+{
+	font-family: 'linux libertine'; font-size: 20px; 
+	background-color: #F5F3F2;
+	margin-left: 10%; margin-right: 10%;
+	margin-bottom: 0%; margin-top: 0%;
+	text-align: center;
+}
+#main-header
+{
+	padding-left: 15%; padding-right: 15%; 
+	margin-left: 10%; margin-right: 10%;
+	margin-bottom: 0%; margin-top: 0%;
+}
+#navbar{font-size: 50px;font-family: 'roboto';}
+#navbar a{color:#000; text-decoration: none; padding-left: 3%; padding-right:3%;}
+#navbar a:hover{color:#871717;}
+
+.column{float: left;width: 25%;}
+.row:after {content: "";display: table;clear: both;}
